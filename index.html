@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal del inquilino | Villan Inmobiliaria</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class="container-logo-titulo">
+            <div>
+                <img src="images/logo.png" alt="logo villan inmobiliaria">
+            </div>
+            <h1 class="titulo-portal">Portal del inquilino</h1>
+        </div>
+
+        <p>Consulte cuánto debe pagar por su alquiler</p>
+        <form id="whatsappForm">
+            <div class="textInputButtonWPContainer">
+                <label for="whatsappInput">Ingrese su número de WhatsApp:</label>
+                <div class="inputButtonWhatsapp">
+                    <input type="text" id="whatsappInput" name="whatsapp" placeholder="5491122334455">
+                    <button type="submit">Consultar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="resultContainer" style="display: none;">
+        <div class="importanteContainer">
+            <p>
+                <span class="bold primary">Importante:</span> para abonar el alquiler puede transferir al alias villan.mp CBU: 11000000 Banco Nación. Recuerde compartir el comprobante de pago al WhatsApp 1122553366 para que se registre en el sistema.
+            </p>
+        </div>
+
+        <div class="centrar">
+            <div class="listadoCuotasContainer">
+                <p>Inquilino: <span id="nombreInquilino"></span></p>
+    
+                <table id="cuotasTable">
+                    <thead>
+                        <tr>
+                            <th>Vencimiento</th>
+                            <th>Estado</th>
+                            <th>Cuota Proporcional</th>
+                            <th>Prórroga</th>
+                            <th>Importe ARS</th>
+                            <th>Importe USD</th>
+                            <th>Deuda pendiente</th>
+                            <th>Fecha Cobro</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuotasBody"></tbody>
+                </table>
+                <button id="btnSalir">Cerrar</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+/*Estilos generales*/
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 1rem; color: #424242;background: linear-gradient(175deg, rgba(248,217,8,0.16299019607843135) 0%, rgba(10,126,68,0.11537114845938379) 100%); background-attachment: fixed; background-size: cover;}
+
+
+/*Colores*/
+.primary { color: #0c8046; }
+.accent { color: #e1ad2c; }
+.warn { color: #f44336; }
+
+/*TEXTOS*/
+.text-center { text-align: center!important; }
+.title { font-weight: 500; font-size: 1.5rem; color: #212121; }
+a { text-decoration: none;  color: #424242; }
+a:hover { color: #0c8046; }
+.small { font-size: .8rem; }
+.active {color:#0c8046; font-weight: 500;}
+.activo { color: #0c8046; font-weight: 500; }
+.inactivo { color: #e1ad2c; font-weight: 500; }
+.bold { font-weight: 500; }
+
+#container {
+    text-align: center;
+}
+
+.textInputButtonWPContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.container-logo-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+img{
+    width: 100px;
+}
+
+.titulo-portal{
+    font-size: 1.5rem;
+    /* margin-left: 2rem; */
+}
+
+.inputButtonWhatsapp{
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .textInputButtonWPContainer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    img{
+        width: 150px;
+    }
+
+    .inputButtonWhatsapp{
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .centrar{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+
+#whatsappInput {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: .9rem;
+    width: 180px;
+    transition: border-color 0.3s ease;
+    margin-right: 0.5rem;
+}
+
+#whatsappInput:focus {
+    outline: none;
+    border-color: #0c8046;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #0c8046;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .9rem;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #0b6b3b;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(10, 117, 63, 0.568);
+}
+
+.importanteContainer{
+    background: #ffffff6b;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin: 1rem;
+}
+
+.listadoCuotasContainer{
+    padding: 1rem;
+    max-width: 320px;
+    overflow-x: scroll;
+    border-radius: 4px;
+    background-color: #ffffff6b;
+}
+
+th{
+    min-width: 130px;
+    text-align: left;
+}
+#cuotasList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#btnSalir {
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .listadoCuotasContainer{
+        max-width: 1200px;
+        overflow-x: auto;
+    }
+}
+
+/* Estilos para la tabla */
+#cuotasTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#cuotasTable th, #cuotasTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#cuotasTable th {
+    background-color: #e7e7e7;
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Estilos para las filas dentro del tbody */
+#cuotasTable tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#cuotasTable tbody tr:nth-child(odd) {
+    background-color: #f3f7fe;
+}
+
+#cuotasTable tbody tr:hover {
+    background-color: #d9edff;
+}
+
+/* Añadir un poco más de espacio entre las filas */
+#cuotasTable tbody tr {
+    padding: 10px 0;
+}
